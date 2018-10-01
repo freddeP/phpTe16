@@ -1,0 +1,7 @@
+Hej
+
+Detta är en textfil
+
+Innehållet är inte hemligt
+
+Detta ligger dock på webbservern så html kan inte hämta så lätt....
