@@ -14,5 +14,15 @@
 
 $oldContent = json_decode( file_get_contents("blogg.json") );
 $oldContent[] = $_POST;
-var_dump($oldContent);
+//var_dump($oldContent);
 file_put_contents("blogg.json", json_encode($oldContent));
+
+header("Location: blogg.php");
+
+
+
+
+
+
+
+
