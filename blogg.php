@@ -17,7 +17,10 @@ foreach($content as $val)
 {
     ?>
         <div><h1>    <?php echo htmlentities($val->author); ?>     </h1>
-        <p>     <?php echo htmlentities( $val->post ); ?>     </p></div>
+        <p>     <?php echo htmlentities( $val->message ); ?>     </p>
+        <a href="delete.php?id=<?php echo $val->id; ?>">delete</a>
+        
+        </div>
 
     <?php
 }
