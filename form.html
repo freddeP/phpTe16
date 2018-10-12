@@ -20,9 +20,10 @@
 </head>
 <body>
 
-    <form action="updateBlogg.php" method="post">
+    <form enctype="multipart/form-data" action="updateBlogg.php" method="post">
         <input type="text" name="author" placeholder="Author" required>
         <textarea name="message" placeholder="Write post" required></textarea>
+        <input type="file" name="file" placeholder="upload file">
         <input type="submit" value="Create Post">
     </form>
     

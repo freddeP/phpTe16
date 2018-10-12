@@ -13,6 +13,8 @@ $content = json_decode($content);
 
 $content = array_reverse($content);
 
+include "form.html";
+
 foreach($content as $val)
 {
     ?>
@@ -20,6 +22,7 @@ foreach($content as $val)
         <p>     <?php echo htmlentities( $val->message ); ?>     </p>
         <a href="delete.php?id=<?php echo $val->id; ?>">delete</a>
         
+        <img src = "<?php echo $val->imgurl ?>" alt = "">
         </div>
 
     <?php
